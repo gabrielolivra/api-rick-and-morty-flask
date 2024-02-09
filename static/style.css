@@ -1,0 +1,82 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: sans-serif;
+}
+
+body{
+background:black;
+}
+
+h1{
+  color: white;
+  text-align:center;
+  margin:20px;
+ }
+
+ .all-personagem {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+ }
+
+ .personagem {
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ background: blue;
+ margin:20px;
+ border-radius:10px;
+ }
+
+ .personagem p{
+ color:white;
+ margin:5px;}
+
+ .personagem img{
+ border-top-left-radius:10px;
+ border-top-right-radius:10px;
+ }
+
+ .personagem a button {
+    background: white;
+    color:blue;
+    width:100px;
+    height:35px;
+    border-radius:10px;
+    border:none;
+    margin:10px;
+    cursor:pointer;
+    font-weight:600;
+ }
+
+.container-personagem {
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+  justify-content:center;
+}
+
+.container-personagem img{
+width:400px;
+border-radius:5px;
+}
+
+.container-personagem p {
+    color:white;
+    margin: 5px;
+    font-size:18px;
+}
+
+
+.btns {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.btns a {
+  color:white;
+  text-decoration:none;
+  margin:20px;
+}

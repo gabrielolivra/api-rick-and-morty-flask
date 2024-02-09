@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+    <h1>API Rick and Morty in Flask</h1>
+    <main class="all-personagem">
+        {% for pers in personagem %}
+         <div class="personagem">
+             <img src="{{ pers.image }}">
+             <p> {{pers.name}} </p>
+             <p> {{ pers.species }}</p>
+             <a href="/personagem/{{pers.id}}"><button value="{{pers.id}}">Informações</button></a>
+         </div>
+        {% endfor %}
+    </main>
+<div class="btns">
+    <a href="/?pagina={{ pagina_atual - 1 }}">Página Anterior</a>
+    <a href="/?pagina={{ pagina_atual + 1 }}">Próxima Página</a>
+</div>
+</body>
+</html>

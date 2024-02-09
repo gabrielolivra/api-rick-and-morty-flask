@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ personagem_id.name }}</title>
+</head>
+<body>
+<h1>{{ personagem_id.name }}</h1>
+<main>
+    <div class="container-personagem">
+    <img src="{{personagem_id.image}}">
+    <p>Status: {{ personagem_id.status }}</p>
+    <p>Especie: {{ personagem_id.species }}</p>
+    <p> Localização: {{ personagem_id.location.name }}</p>
+    <p></p>
+</div>
+</main>
+</body>
+</html>
